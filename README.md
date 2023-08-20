@@ -18,9 +18,9 @@ Client found at https://meteorclient.com/ & Meteor → <a href="https://discord.
 
 <div align="center">
 
-![Offhand_repair_Demo](https://github.com/BongwaterBilly420/QuartzFarmerAddon/assets/119636975/4995a4ea-d086-414a-85cf-731f1e06ebe0)
+![Offhand_repair_Demo](https://github.com/BongwaterBilly420/QuartzFarmerAddon/assets/119636975/9f81c314-8c84-44f2-ba94-6023d48ee073)
 Offhand repairing using toggle modules to turn off and on auto totem allowing tools to be held in offhand (Probs dont use where some cunt will run up on you as you wont have a totem) (Also dont be a cunt and kill a friend when there mending kek) 
-![EfficiencyV (2)](https://github.com/BongwaterBilly420/QuartzFarmerAddon/assets/119636975/adc025c8-f777-473a-b946-c2182330f48d)
+![EfficiencyV](https://github.com/BongwaterBilly420/QuartzFarmerAddon/assets/119636975/78cb6bb2-5b7c-43b0-b60c-c4761081bd16)
 
 </div>
 
