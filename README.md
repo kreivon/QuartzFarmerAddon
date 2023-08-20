@@ -70,7 +70,7 @@ Download and run the addon/mod with the latest Meteor dev build. (Reqires Fabric
 ## Acknowledgments
 * A ***MASSIVE*** thanks to MineGame159 & seasnail !!!
 
-* Also the great sesh i had on the day i made it. It gave me the bright idea and the courage to skid echest farmer and change fuck all code to do what it do. Was some good buds 🌿💨
+* Also the great sesh i had on the. It gave me the bright idea and the courage to skid echest farmer and change fuck all code to do what it do. Was some good buds 🌿💨
 
 Client can be found here - https://meteorclient.com/
 
