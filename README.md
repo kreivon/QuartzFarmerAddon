@@ -18,9 +18,9 @@ Client found at https://meteorclient.com/ & Meteor → <a href="https://discord.
 
 <div align="center">
 
-![Offhand_repair_Demo](https://github.com/BongwaterBilly420/QuartzFarmerAddon/assets/119636975/9f81c314-8c84-44f2-ba94-6023d48ee073)
+![Offhand_repair_Demo](https://github.com/BongwaterBilly420/QuartzFarmerAddon/blob/ReadMe/Offhand_repair_Demo.gif)
 Offhand repairing using toggle modules to turn off and on auto totem allowing tools to be held in offhand (Probs dont use where some cunt will run up on you as you wont have a totem) (Also dont be a cunt and kill a friend when there mending kek) 
-![EfficiencyV](https://github.com/BongwaterBilly420/QuartzFarmerAddon/assets/119636975/78cb6bb2-5b7c-43b0-b60c-c4761081bd16)
+![EfficiencyV](https://github.com/BongwaterBilly420/QuartzFarmerAddon/blob/ReadMe/EfficiencyV.gif)
 
 </div>
 
@@ -46,6 +46,11 @@ Offhand repairing using toggle modules to turn off and on auto totem allowing to
 <p>Yea but to go far with minimal effort/afkish you will have to farm it with a silk pick and store it in a shulker (which its so easy to find large amounts without going far off a highway in the the nether)
 And when you Travel take as many elytras if you have them so you can use elytra swap till there all broken and then just land and repair shit.</p>
 <p><img src="https://i.imgur.com/pJIMD9l.png"/></p>
+</details>
+
+<details>
+<summary>Where do i toggle the module/bind it?</summary>
+<p><img src="https://github.com/BongwaterBilly420/QuartzFarmerAddon/blob/ReadMe/javaw_SIIHdqXzkW.png"/></p>
 </details>
 
 <details>
