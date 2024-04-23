@@ -1,83 +1,69 @@
-  <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/vOQG2xR.jpg">
-  <img alt="Prism Launcher" src="https://i.imgur.com/vOQG2xR.jpg" width="100%">
-<div align="center">
-  
-This is a Player Skidded Addon That has a modified echest farmer with like two things changed that makes it farm Quartz Ore to have a way to get large amounts of Xp Using Quartz Ore that can be easily mined with a silk touch pick and carried in a shulker if your retarded and didnt know why this would be benifficial
-on 2b2t as hause is a cunt and it's also great for starting on other servers before you have access to Xp shulkers Using Meteor Client for Anarchy servers (Addon is 1.20.1+).<br>
-Client found at https://meteorclient.com/ & Meteor → <a href="https://discord.gg/bBGQZvd"><img src="https://img.shields.io/discord/689197705683140636?logo=discord" alt="MeteorDiscord"/> </a><br>
-***!!! Users of this Addon please dont ask in the Meteor Client discord/GitHub, or anywhere they run for support as you will be told to fuck off***
+# File Encryption Utility with Discord Integration
 
-<div align="center">
-  <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/lYt3mH9.png">
-  <img alt="Prism Launcher" src="https://i.imgur.com/lYt3mH9.png" width="32%">
-  <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/JnjUnLE.png">
-  <img alt="Prism Launcher" src="https://i.imgur.com/JnjUnLE.png" width="32%">
-  <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/0PPKcPG.png">
-  <img alt="Prism Launcher" src="https://i.imgur.com/0PPKcPG.png" width="32%">
-</div>
+This Python script provides a simple encryption and decryption utility for files, with an additional feature to send the encryption keys to a Discord channel via webhook.
 
-<div align="center">
+## Functionality Overview
 
-![Offhand_repair_Demo](https://github.com/BongwaterBilly420/QuartzFarmerAddon/blob/ReadMe/Offhand_repair_Demo.gif)
-Offhand repairing using toggle modules to turn off and on auto totem allowing tools to be held in offhand (Probs dont use where some cunt will run up on you as you wont have a totem) (Also dont be a cunt and kill a friend when there mending kek) 
-![EfficiencyV](https://github.com/BongwaterBilly420/QuartzFarmerAddon/blob/ReadMe/EfficiencyV.gif)
+### Libraries Imported
 
-</div>
+- **sys**: For system-specific parameters and functions.
+- **subprocess**: For executing system commands (e.g., installing Python packages).
+- **pyperclip**: For accessing the clipboard to copy and paste data.
+- **requests**: For making HTTP requests.
+- **cryptography.fernet**: For symmetric encryption and decryption.
 
-<div align="center">
-    <br>
-    <img src="https://img.shields.io/github/downloads/BongwaterBilly420/QuartzFarmerAddon/total?color=%231081C2&style=plastic"/>
-    <img src="https://img.shields.io/github/stars/BongwaterBilly420/QuartzFarmerAddon"/>
-    <br>
-    <img src="https://img.shields.io/github/manifest-json/v/BongwaterBilly420/QuartzFarmerAddon"/>
-    <img src="https://img.shields.io/github/actions/workflow/status/BongwaterBilly420/QuartzFarmerAddon/dev_build.yml"/>
-</div>
-<div align="left">
+### Functions Defined
 
-## Features
+- **generate_key()**: Generates a random encryption key using Fernet symmetric encryption algorithm.
+- **encrypt_file(file_path, key, webhook=None)**: Encrypts a file specified by file_path using the provided key. Optionally, if a Discord webhook is provided, it sends the encryption key to the specified Discord channel.
+- **decrypt_file(file_path, key)**: Decrypts an encrypted file specified by file_path using the provided key.
+- **send_to_discord(key, file_name, webhook)**: Sends the encryption key and file_name to a Discord channel via webhook.
+- **main()**: The main function orchestrating the script execution.
 
-<details>
-<summary>What the dog do?</summary>
-<p>I needed a way of repairing my shit easy on const (But now would be so good on 2b2t as you can farm quartz easy with a silk pick and store it in shulkers for use whenever). When i was starting and only had access to small amounts of Xp so i got baked and that green goodness gave me the courage to skid echest farmer, change a couple of things and call it a day. But yea i ended up with a module that when i toggle the cunt starts repairing all my shit fast as fuck boii. </p>
-</details>
+### Main Functionality
 
-<details>
-<summary>Can it be used for Long travel & how do you get Quartz?</summary>
-<p>Yea but to go far with minimal effort/afkish you will have to farm it with a silk pick and store it in a shulker (which its so easy to find large amounts without going far off a highway in the the nether)
-And when you Travel take as many elytras if you have them so you can use elytra swap till there all broken and then just land and repair shit.</p>
-<p><img src="https://i.imgur.com/pJIMD9l.png"/></p>
-</details>
+- **Installation of Dependencies**: Checks if required packages (pyperclip and cryptography) are installed. If not, it attempts to install them using pip.
+- **Option Selection Loop**: Allows the user to choose one of three options:
+  - Use pre-set webhook.
+  - Enter a webhook manually.
+  - Encrypt files dropped on the script, print keys, and wait.
+- **File Processing**: If the user chooses to encrypt or decrypt files, the script iterates through each specified file path.
 
-<details>
-<summary>Where do i toggle the module/bind it?</summary>
-<p><img src="https://github.com/BongwaterBilly420/QuartzFarmerAddon/blob/ReadMe/javaw_SIIHdqXzkW.png"/></p>
-</details>
+### Encryption Process
 
-<details>
-<summary>Does it do anything else?</summary>
-<p>No.</p>
-</details>
+- **Key Generation**: Generates a random encryption key using the Fernet.generate_key() function.
+- **Encryption**:
+  - Reads the contents of the file into memory.
+  - Creates a Fernet cipher object using the encryption key.
+  - Encrypts the data and writes it to a new file with the .sus extension.
+  - Deletes the original unencrypted file for security purposes.
 
-<details>
-<summary>Can you add renders please?</summary>
-<p>Nah turn on break indicators in a Client/Meteor</p>
-<p><img src="https://i.imgur.com/hNxBppb.png"/></p>
-</details>
+### Decryption Process
 
-</div>
+- **Read Encrypted Data**: Reads the contents of the encrypted file into memory using a binary read mode.
+- **Create Fernet Cipher**: Creates a Fernet cipher object using the encryption key.
+- **Decrypt Data**: Decrypts the encrypted data using the Fernet cipher object.
+- **Write Decrypted Data**: Writes the decrypted data to a new file with the original file extension restored.
+- **Delete Encrypted File**: Deletes the encrypted file after decryption.
 
-<div align="left">
+### Interaction with Discord
 
-## Installation
-[Latest Quartz Farmer](https://github.com/BongwaterBilly420/QuartzFarmerAddon/releases) & [Download the latest dev build.](https://github.com/BongwaterBilly420/PrismLauncherFork/releases)<br>
-Download and run the addon/mod with the latest Meteor dev build. (Reqires Fabric)
+- If a webhook is provided, the script sends the encryption keys to a Discord channel, including the encryption key and the name of the encrypted file.
 
-## Acknowledgments
-* A ***MASSIVE*** thanks to MineGame159 & seasnail !!!
+### Additional Features
 
-* Also the great sesh i had on the day. It gave me the bright idea and the courage to skid echest farmer and change fuck all code to do what it do. Was some good buds 🌿💨
+- Copies encryption keys to the clipboard for easy access.
+- Handles errors gracefully and provides informative messages.
 
-Client can be found here - https://meteorclient.com/
+## Usage
 
-***!!! Users of this Addon please dont ask in the Meteor Client discord/GitHub, or anywhere they run for support as you will be told to fuck off***
-</div>
+1. Ensure Python and required packages are installed.
+2. Run the script and follow the prompts to encrypt or decrypt files.
+
+## Contribution
+
+Contributions are welcome! Feel free to open issues and submit pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
