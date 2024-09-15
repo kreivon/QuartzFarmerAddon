@@ -5,6 +5,7 @@ import meteordevelopment.meteorclient.renderer.ShapeMode;
 import meteordevelopment.meteorclient.settings.*;
 import meteordevelopment.meteorclient.systems.modules.Categories;
 import meteordevelopment.meteorclient.systems.modules.Module;
+import meteordevelopment.meteorclient.utils.Utils;
 import meteordevelopment.meteorclient.utils.player.FindItemResult;
 import meteordevelopment.meteorclient.utils.player.InvUtils;
 import meteordevelopment.meteorclient.utils.player.PlayerUtils;
@@ -14,10 +15,14 @@ import meteordevelopment.orbit.EventHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.resource.NamespaceResourceManager;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.BlockPos;
@@ -190,7 +195,7 @@ public class QuartzFarmer extends Module {
 
             for (int i = 0; i < 9; i++) {
                 ItemStack itemStack = mc.player.getInventory().getStack(i);
-                if (EnchantmentHelper.getLevel(Enchantments.SILK_TOUCH, itemStack) > 0) continue;
+                if (Utils.hasEnchantment(itemStack, Enchantments.SILK_TOUCH)) continue;
 
                 double score = itemStack.getMiningSpeedMultiplier(Blocks.NETHER_QUARTZ_ORE.getDefaultState());
 

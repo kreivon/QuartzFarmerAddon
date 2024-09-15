@@ -1,11 +1,14 @@
 {
   "schemaVersion": 1,
   "id": "quartzfarmer",
-  "version": "${420}",
+  "version": "${version}",
   "name": "QuartzFarmer",
-  "description": "An addon for Meteor.",
+  "description": "An addon for Meteor.  Ported to 1.21 by Kreivon.",
   "authors": [
     "BongwaterBilly"
+  ],
+  "contributors": [
+    "Kreivon"
   ],
   "contact": {
     "repo": "https://github.com/BongwaterBilly420/QuartzFarmerAddon"
@@ -16,15 +19,12 @@
       "bongwater.QuartzFarmerAddon.QuartzFarmerAddon"
     ]
   },
-  "mixins": [
-    "QuartzFarmer.mixins.json"
-  ],
   "custom": {
     "meteor-client:color": "225,25,25"
   },
   "depends": {
-    "java": ">=17",
-    "minecraft": "~${mc_version}",
+    "java": ">=21",
+    "minecraft": "1.21.x",
     "meteor-client": "*"
   }
 }
